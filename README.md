@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sistem Aspirasi & Pengaduan Siswa SMK IT
 
-## Getting Started
+Platform modern dan interaktif untuk penyampaian, pelacakan, dan pengelolaan aspirasi serta pengaduan siswa SMK IT berbasis web dengan klasifikasi otomatis (NLP/AI), sistem tiket unik, papan aspirasi publik, dan dashboard admin.
 
-First, run the development server:
+---
+
+## 🚀 Fitur Utama
+
+- **Penyampaian Aspirasi Cerdas**
+  - Prediksi kategori dan urgensi otomatis secara real-time berbasis NLP lokal (*Keyword & Sentiment Matcher*).
+  - Opsi pelaporan terbuka maupun anonim.
+  - Unggah lampiran foto/bukti pendukung (Base64 storage).
+  - Generator kode tiket unik untuk pelacakan langsung.
+
+- **Pelacakan Tiket (Tracking System)**
+  - Cek progres status aspirasi (Pending, Diproses, Selesai, Ditolak).
+  - Riwayat interaktif timeline status.
+  - Diskusi 2 arah langsung antara pelapor dan pihak sekolah/admin.
+
+- **Papan Aspirasi Publik**
+  - Menampilkan aspirasi yang bersifat publik dengan filter kategori dan pencarian.
+  - Upvote / Dukungan komunitas siswa dengan interaksi dinamis.
+
+- **Panel Admin / Pengelola**
+  - Autentikasi aman bagi tim kesiswaan / admin sekolah.
+  - Statistik ringkas total pengaduan, status penyelesaian, dan sebaran kategori.
+  - Pembaruan status penanganan dan tanggapan langsung ke siswa.
+  - Ekspor laporan aspirasi ke format CSV.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack)
+- **Library UI**: [React](https://react.dev/), [Lucide React](https://lucide.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Visual Feedback**: Canvas Confetti
+- **Bahasa**: TypeScript
+
+---
+
+## 💻 Memulai Proyek
+
+Jalankan perintah berikut untuk menginstal dependensi dan memulai server pengembangan:
 
 ```bash
+# Instal dependensi
+npm install
+
+# Jalankan server lokal
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka browser di [http://localhost:3000](http://localhost:3000) untuk melihat aplikasi.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Build Produksi
 
-## Learn More
+Untuk membuat build produksi yang teroptimasi:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm run start
+```
